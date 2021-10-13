@@ -1,0 +1,12 @@
+name: Open Policy Agent workflow with Terraform
+
+on:
+  push:
+    branches:    
+      - main
+
+jobs:
+  call-opa-workflow:
+    uses: edsoncelio/workflow-opa-terraform/.github/workflows/opa-terraform.yml@main
+    
+  
